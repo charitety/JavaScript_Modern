@@ -5,7 +5,9 @@
 
 const ex1 = () => {
     const array = [1, '2', 3, 'test', 1.2];
+    const array2 = ['hi', 'gray', false, true, 'maria', 1, 14, true];
     console.log(countNumbers(array));
+    console.log(countNumbers(array2));
 }
 
 const ex2 = () => {
@@ -22,9 +24,15 @@ const ex3 = () => {
 
 const countNumbers = (array) => {
     let retval = 0;
-    // TODO...
+    array.forEach(num => {
+        if (typeof num === "number") {
+            retval++;
+        }
+    })
     return retval;
 }
+
+
 
 const main = async () => {
     ex1();
