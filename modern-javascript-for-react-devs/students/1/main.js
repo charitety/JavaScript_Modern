@@ -20,7 +20,14 @@ const ex2 = () => {
 };
 
 const ex3 = () => {
-  // TODO...
+  const array1 = [1, 2, 3, 4, 5];
+  const array2 = ["a", "b", "c", "d", "e"];
+  const array3 = [0, -1, -2, -3, -4];
+  const array4 = ["a", "e", "i", "o", "u"];
+  const array5 = ["a", "e", "i"];
+  console.log(interleave(array1, array2));
+  console.log(interleave(array3, array4));
+  console.log(interleave(array4, array5));
 };
 
 //
@@ -47,8 +54,37 @@ const minNumber = (array) => {
   return min;
 };
 
+const interleave = (array1, array2) => {
+  let newString = "";
+  //Check if the two arrays are the same length
+  if (array1.length !== array2.length)
+    //If they are not, display "ERROR: Array length mismatch"
+    return "ERROR: Array length mismatch";
+  //If the arrays are the same length continue and run a for loop
+
+  // //Check first element of array1 and append it to a string
+  
+  // //Check first element of array2 and concatenate to the string
+  
+  // //Continue iterating and check the subsequent element of array1
+  // //and the corresponding element of array2 and keep concatenating to the string
+  
+  // //Continue the process until all the elements of the array have been checked
+  // //and concatenated
+  
+  // //Return string
+  else {
+
+    for (let i = 0; i < array1.length; i++) {
+      newString = newString.concat(array1[i], array2[i]);
+    }
+
+    return newString;
+  }
+};
+
 const main = async () => {
-  ex2();
+  ex3();
 };
 
 main();
