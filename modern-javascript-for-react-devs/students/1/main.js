@@ -30,6 +30,16 @@ const ex3 = () => {
   console.log(interleave(array4, array5));
 };
 
+
+const ex4 = () => {
+  const string = ('month');
+  const string2 = ('radar');
+  const string3 = ('madame');
+  console.log(palindrome(string));
+  console.log(palindrome(string2));
+  console.log(palindrome(string3));
+};
+
 //
 // Your functions here...
 //
@@ -83,8 +93,20 @@ const interleave = (array1, array2) => {
   }
 };
 
+
+const palindrome = (string) => {
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] != string[string.length-1-i]) {
+      return false;
+    }
+    else return true
+  }
+};
+
+
+
 const main = async () => {
-  ex3();
+  ex4();
 };
 
 main();
