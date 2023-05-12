@@ -34,12 +34,18 @@ const ex3 = () => {
 const ex4 = () => {
   const string = ('month');
   const string2 = ('radar');
-  const string3 = ('madame');
+  const string3 = ('mad1231dam');
   console.log(palindrome(string));
   console.log(palindrome(string2));
   console.log(palindrome(string3));
 };
 
+// const ex5 = () => {
+//   const string = ("today this is a this is a this is a test.");
+//   const string2 = ("Tomorrow, tomorrow I love ya tomorrow you're always, a day away");
+//   console.log(wordCounter(string));
+//   console.log(wordCounter(string2));
+// };
 //
 // Your functions here...
 //
@@ -95,14 +101,27 @@ const interleave = (array1, array2) => {
 
 
 const palindrome = (string) => {
-  for (let i = 0; i < string.length; i++) {
-    if (string[i] != string[string.length-1-i]) {
+  for (let i = 0; i < string.length/2; i++) {
+    if (string[i] !== string[string.length-1-i]) {
       return false;
     }
-    else return true
+    
   }
+  return true
 };
 
+
+// const wordCounter = (string) => {
+//   for (let i = 0; i < string.length; i++) {
+//     if (string[i] != string[string.length-1-i]) {
+//       return false;
+//     }
+
+//     if(numberOfTime = 1) {return `${targetWord} appears once.`}
+//     if(numberOfTime > 1) {return `${targetWord} appears: ${numberOfTime} times.`}
+//     else return "Word was not found."
+//   }
+// };
 
 
 const main = async () => {
