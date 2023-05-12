@@ -40,15 +40,15 @@ const ex4 = () => {
   console.log(palindrome(string3));
 };
 
-// const ex5 = () => {
-//   const string = ("today this is a this is a this is a test.");
-//   const string2 = ("Tomorrow, tomorrow I love ya tomorrow you're always, a day away");
-//   console.log(wordCounter(string));
-//   console.log(wordCounter(string2));
-// };
-//
-// Your functions here...
-//
+const ex5 = () => {
+  const string = ("today this is a this is a this is a test.");
+  const string2 = ("tomorrow, tomorrow I love ya tomorrow you're always, a day away");
+  console.log(wordCounter(string));
+  console.log(wordCounter(string2));
+};
+
+//Your functions here...
+
 
 const countNumbers = (array) => {
   let retval = 0;
@@ -111,21 +111,27 @@ const palindrome = (string) => {
 };
 
 
-// const wordCounter = (string) => {
-//   for (let i = 0; i < string.length; i++) {
-//     if (string[i] != string[string.length-1-i]) {
-//       return false;
-//     }
+const wordCounter = (string) => {
+//given a word, counts the number of time it appears in a phrase
 
-//     if(numberOfTime = 1) {return `${targetWord} appears once.`}
-//     if(numberOfTime > 1) {return `${targetWord} appears: ${numberOfTime} times.`}
-//     else return "Word was not found."
-//   }
-// };
+//start from the first letter of the first word of the phrase
+
+//stop and the first empty space
+
+//register a count of 1 corresponding to the 1st word and continue counting
+
+//with each empty count a word
+
+
+
+    if(numberOfTime = 1) {return `${targetWord} appears once.`}
+    if(numberOfTime > 1) {return `${targetWord} appears: ${numberOfTime} times.`}
+    else return "Word was not found."
+  };
 
 
 const main = async () => {
-  ex4();
+  ex5();
 };
 
 main();
